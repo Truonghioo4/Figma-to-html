@@ -12,6 +12,20 @@ body{
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+
+.heading-lv2{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.27; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.break-all{
+    word-break: break-all;
+
+}
 /* ====== Comment ======= */
 a{
     text-decoration: none;
@@ -41,6 +55,16 @@ a{
     opacity: 0.8;
     cursor: pointer;
 }
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2{
+    --line-clamp: 2;
+}
+
 
 /* === Header === */
 
@@ -256,4 +280,237 @@ a{
 
 .hero .stats{
     margin-top: 28px;
+}
+
+.popular{
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+.popular-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-top .desc{
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 1.8rem;
+    line-height: 1.67; /* 166.667% */
+    width: 458px;
+}
+
+.control{
+    display: flex;
+    gap: 18px;
+}
+
+.popular-top .control-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.popular-top .control-btn:hover{
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.popular .course-list{
+    gap: 30px;
+    margin-top: 55px;
+    display: flex;
+}
+
+.popular .course-item{
+    flex: 1;
+    border-radius: 12px;
+    border: 1px solid #E2DFDA;
+    background: #FFF;
+}
+
+.popular .course-item:hover{
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    
+}
+
+.popular .course-item .thumb{
+    border-radius: 12px 12px 0px 0px;
+    height: 278px;
+    width: 100%;
+}
+
+.popular .course-item .info{
+    padding: 16px 22px 22px;
+}
+
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular .course-item .title a{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular .rating .value{
+    color: #FEA31B;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.popular .course-item .desc{
+    margin-top: 6px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+
+.popular .course-item .foot{margin-top: 12px;}
+
+.popular .course-item .price{
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.popular .course-item .btn-book{
+    border: none;
+}
+
+.popular .course-item .btn-book:hover{
+    background-color: var(--primary-color);
+}
+
+.feedback{
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+.feedback-item{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.feedback-item .avata{
+    width: 72px; height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .mem-name{
+    margin-top: 18px;
+    color: #F7F7F7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42; /* 141.667% */
+}
+.feedback-item .info .desc{
+    margin-top: 4px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    line-height: 1.86; /* 185.714% */
+}
+.feedback-item .dots{
+    gap: 6px;
+    margin-top: 28px;
+    display: flex;
+}
+
+.feedback-item .dot{
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.feedback-item .dot.active{
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.feedback-item .content{
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback-item blockquote{
+    color: #FFF;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54; /* 153.846% */
+}
+
+.feedback-list{
+    display: flex;
+    overflow: hidden;
+}
+
+/* === Feature=== */
+.feature{
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.feature .body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature .images{
+    display: flex;
+    gap: 30px;
+
+}
+
+.feature .images img{
+    width: 270px;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .lower{
+    margin-top: 34px;
+}
+
+.feature .content{
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature .desc{
+    margin: 16px 0;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    line-height: 1.75; /* 175% */
+}
+
+.feature .btn{
+    margin-top: 16px;
+    width: 137px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background: var(--primary-color);
 }
